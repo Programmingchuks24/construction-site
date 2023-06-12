@@ -1,0 +1,121 @@
+body {
+
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top:0;
+    display: flex;
+    width:100%;
+    height:80px;
+    background-color: white;
+    flex-direction: row;
+    align-items: center;
+    z-index:1;
+}
+
+nav a.logo {
+
+    margin-right:45rem;
+    pointer-events: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+nav a {
+    margin-left:2rem;
+    text-decoration:none;
+    color:black
+}
+
+nav a:not(.logo):hover,
+nav a.active  {
+    color:orange;
+}
+
+.main-page  {
+    position: relative;
+    top:5rem;
+    background: url("./tractor.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+
+}
+
+.main-page .content {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.main-page .content .text  h1 {
+    text-align: center;
+    color:white;
+    margin-top:20rem;
+    font-size: 40px;
+}
+
+
+.main-page .content .text p {
+    text-align: center;
+    color:white;
+    letter-spacing: 1px;
+    font-weight: 200;
+
+}
+
+.btn {
+    margin-left:37rem;
+    width:200px;
+    height:50px;
+    border:0;
+    color:white;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: transparent;
+    border:1px solid orange;
+}
+
+.skillset {
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top:10rem;
+    margin-left:2rem;
+}
+
+.content_design, .content_design_2{
+    margin-right: 10rem;
+}
+
+.content_design_3 {
+    margin-right: 3rem;
+}
+
+.content_design p, 
+.content_design_2 p, 
+.content_design_3 p {
+
+    color:grey;
+}
+
+.skill_content {
+    display: flex;
+    flex-direction: row;
+}
